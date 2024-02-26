@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Drink2Go</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/index.js" defer></script>
+  </head>
+  <body class="page__body">
+    <header  class="header" data-test="header">
+      <picture class="header__logo">
+        <source media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg" width="170" height="36">
+        <source media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg" width="82" height="36">
+        <img src="images/logo/logo-mobile.svg" alt="логотип сайта drink2go" width="32" height="36">
+      </picture>
+      <p class="header__description-site">
+        Интернет-магазин
+        кофейных напитков
+      </p>
+      <nav class="nav">
+        <button class="nav__toggle">
+          <span class="visually-hidden">
+            Открыть меню
+        </span>
+      </button>
+      <div class="nav__wrapper">
+        <ul class="nav__list site-list">
+          <li class="site-list__item">
+            <a href="#" class="site-list__link site-list__link--active" >
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">
+              Каталог
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">
+              Доставка
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">
+              О нас
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="nav__list user-list">
+        <li class="user-list__item">
+          <a href="#" class="user-list__link">
+            <img src="images/icons/user.svg" width="16" height="16">
+            Войти
+          </a>
+        </li>
+        <li class="user-list__item">
+          <a href="#" class="user-list__link">
+            <img src="images/icons/basket.svg" width="16" height="16">
+            Корзина
+          </a>
+        </li>
+      </ul>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
