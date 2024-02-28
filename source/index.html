@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Drink2Go</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header  class="header" data-test="header">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Drink2Go</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header" data-test="header">
+    <nav class="nav">
       <picture class="header__logo">
         <source media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg" width="170" height="36">
         <source media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg" width="82" height="36">
         <img src="images/logo/logo-mobile.svg" alt="логотип сайта drink2go" width="32" height="36">
       </picture>
       <p class="header__description-site">
-        Интернет-магазин
+        Интернет-магазин <br>
         кофейных напитков
       </p>
-      <nav class="nav">
-        <button class="nav__toggle">
-          <span class="visually-hidden">
-            Открыть меню
+      <ul class="nav__list user-list">
+        <li class="user-list__item">
+          <a href="#" class="user-list__link link">
+            <img class="link__img" src="images/icons/user.svg" width="16" height="16" alt="Профиль">
+            <p class="link__text">Войти</p>
+          </a>
+        </li>
+        <li class="user-list__item link">
+          <a href="#" class="user-list__link">
+            <img class="link__img" src="images/icons/basket.svg" width="16" height="16" alt="Корзина">
+            <p class="link__text">корзина</p>
+          </a>
+        </li>
+      </ul>
+      <button class="nav__toggle nav__toggle--disable">
+        <span class="visually-hidden">
+          Открыть меню
         </span>
       </button>
-      <div class="nav__wrapper">
+      <div class="nav__wrapper nav__wrapper--closed">
         <ul class="nav__list site-list">
           <li class="site-list__item">
-            <a href="#" class="site-list__link site-list__link--active" >
+            <a href="#" class="site-list__link site-list__link--active">
               Главная
             </a>
           </li>
@@ -48,23 +64,131 @@
           </li>
         </ul>
       </div>
-      <ul class="nav__list user-list">
-        <li class="user-list__item">
-          <a href="#" class="user-list__link">
-            <img src="images/icons/user.svg" width="16" height="16">
-            Войти
-          </a>
-        </li>
-        <li class="user-list__item">
-          <a href="#" class="user-list__link">
-            <img src="images/icons/basket.svg" width="16" height="16">
-            Корзина
-          </a>
-        </li>
-      </ul>
-      </nav>
-    </header>
-    <main></main>
-    <footer></footer>
-  </body>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="main__slider slider">
+      <button class="slider__button slider__button-back">
+
+      </button>
+      <div id="slider" class="slider__container">
+        <div class="slider__main">
+          <picture class="slider__img">
+            <source media="(min-width: 1440px)" srcset="images/slider/flat-white-desktop.png" width="600" height="600">
+            <source media="(min-width: 768px)" srcset="images/slider/flat-white-tablet.png" width="476" height="476">
+            <img src="images/slider/flat-white-mobile.png" alt="Декаф Флет Уайт" width="280" height="280">
+          </picture>
+          <p class="slider__text">
+            Новинка!
+          </p>
+          <h1 class="slider__coffe-name">
+            Декаф Флэт
+            Уайт
+          </h1>
+          <p class="slider__coffe-description">
+            Свежесваренный кофе без кофеина
+            из Эфиопии <br>с натуральным
+            фермерским молоком — то, что
+            нужно для расслабления после
+            тяжёлого рабочего дня
+          </p>
+          <div class="slider__price price">
+            <p class="price__old">
+              295₽
+            </p>
+            <p class="price__new">
+              225₽
+            </p>
+            <button class="price__button">
+              <p>
+                Заказать
+              </p>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="slider__main">
+          <picture class="slider__img">
+            <source media="(min-width: 1440px)" srcset="images/slider/flat-white-desktop.png" width="600" height="600">
+            <source media="(min-width: 768px)" srcset="images/slider/flat-white-tablet.png" width="476" height="476">
+            <img src="images/slider/flat-white-mobile.png" alt="Декаф Флет Уайт" width="280" height="280">
+          </picture>
+          <p class="slider__text">
+            Новинка!
+          </p>
+          <h1 class="slider__coffe-name">
+            Декаф Флэт
+            Уайт
+          </h1>
+          <p class="slider__coffe-description">
+            Свежесваренный кофе без кофеина
+            из Эфиопии <br>с натуральным
+            фермерским молоком — то, что
+            нужно для расслабления после
+            тяжёлого рабочего дня
+          </p>
+          <div class="slider__price price">
+            <p class="price__old">
+              295₽
+            </p>
+            <p class="price__new">
+              225₽
+            </p>
+            <button class="price__button">
+              <p>
+                Заказать
+              </p>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="slider__main">
+          <picture class="slider__img">
+            <source media="(min-width: 1440px)" srcset="images/slider/flat-white-desktop.png" width="600" height="600">
+            <source media="(min-width: 768px)" srcset="images/slider/flat-white-tablet.png" width="476" height="476">
+            <img src="images/slider/flat-white-mobile.png" alt="Декаф Флет Уайт" width="280" height="280">
+          </picture>
+          <p class="slider__text">
+            Новинка!
+          </p>
+          <h1 class="slider__coffe-name">
+            Декаф Флэт
+            Уайт
+          </h1>
+          <p class="slider__coffe-description">
+            Свежесваренный кофе без кофеина
+            из Эфиопии <br>с натуральным
+            фермерским молоком — то, что
+            нужно для расслабления после
+            тяжёлого рабочего дня
+          </p>
+          <div class="slider__price price">
+            <p class="price__old">
+              295₽
+            </p>
+            <p class="price__new">
+              225₽
+            </p>
+            <button class="price__button">
+              <p>
+                Заказать
+              </p>
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+
+      <button class="slider__button slider__button-next">
+
+      </button>
+    </section>
+  </main>
+
+  <footer></footer>
+</body>
+
 </html>
