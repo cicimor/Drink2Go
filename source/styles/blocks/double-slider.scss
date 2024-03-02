@@ -1,0 +1,130 @@
+.double-slider {
+  min-width: 280px;
+  min-height: 132px;
+  border-radius: 10px;
+  position: relative;
+
+  @media (min-width:$tablet-width) {
+    min-width: 223px;
+    height: 126px;
+  }
+}
+
+.double-slider__title {
+  margin: 0;
+  text-align: start;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.double-slider__range-slider {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  margin: 31px 0 0;
+
+  @media (min-width:$tablet-width) {
+
+  }
+}
+
+.double-slider__slider-track {
+  height: 100%;
+  position: absolute;
+  background-color: #9070EC;
+  z-index: 3;
+}
+
+.double-slider__slider-track-hidden {
+  position: absolute;
+  height: 2px;
+  background-color: #E2E2E2;
+  width: 100%;
+  margin: 1px 0 0 0;
+}
+
+.double-slider__range-slider > input {
+  position: absolute;
+  width: 100%;
+  background: none;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+  appearance: none;
+  margin: 0;
+  z-index: 5;
+
+}
+
+
+.double-slider__input-box {
+ display: flex;
+ width: 100%;
+ height: 40px;
+ margin: 35px auto 0;
+ justify-content: space-between;
+ align-items: center;
+ @media (min-width:$tablet-width) {
+  margin: 30px auto 0;
+ }
+
+ @media (min-width:$desktop-width) {
+  margin: 32px auto 0;
+ }
+
+}
+
+.double-slider__input-box::before {
+  content: '';
+  position: absolute;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  width: 8px;
+  height: 2px;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='2' viewBox='0 0 8 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 1.99982H0V-0.000183105H8V1.99982Z' fill='%23BDBDBD'/%3E%3C/svg%3E%0A");
+}
+
+.double-slider__min-box,
+.double-slider__max-box {
+  width: 114px;
+  height: 40px;
+  border:none;
+  border-radius: 3%;
+  display: flex;
+  outline: #9070EC solid 2px;
+
+  @media (min-width:$tablet-width) {
+    width: 87px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 134px;
+  }
+}
+
+.double-slider__input-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.double-slider__input-field {
+  border: none;
+  width: 100%;
+  background-color: rgba(0, 0, 0,0);
+  width: 98px;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #333333;
+  padding: 0;
+
+}
+
+.double-slider__input-field:focus {
+  outline: none;
+}

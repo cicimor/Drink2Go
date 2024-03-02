@@ -1,1 +1,44 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #9070EC;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  color: #9070EC;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 24px;
+  width: 24px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #9070EC;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+  color: #BDBDBD;
+
+  :-moz-placeholder {
+    color: #BDBDBD;
+  }
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+
+}

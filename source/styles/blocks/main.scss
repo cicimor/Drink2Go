@@ -1,6 +1,5 @@
 .main {
- display: flex;
- min-width: 320px;
+  min-width: 320px;
 }
 
 
@@ -9,7 +8,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color:#F3EBE1;
+  background-color: #F3EBE1;
   justify-content: center;
 
   @media (min-width:$tablet-width) {
@@ -20,3 +19,58 @@
     min-height: 714px;
   }
 }
+
+.main__features {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 60px;
+  align-items: center;
+
+  @media (min-width:$tablet-width) {
+    margin: 188px 0 0 0;
+    padding: 0 0 100px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin: 0;
+    padding: 0 0 120px;
+  }
+
+}
+
+.main__catalog {
+  display: flex;
+  flex-direction: column;
+  min-height: 902px;
+  align-items: center;
+  background-color: #F8F8F8;
+  padding: 0 0 44px;
+  @media (min-width:$tablet-width) {
+    padding: 0 0 90px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding: 0 0 120px;
+  }
+
+}
+
+.main__map {
+  height: 420px;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width:$tablet-width) {
+    height: 480px;
+  }
+
+  @media (min-width:$desktop-width) {
+    height: 540px;
+  }
+
+}
+
+.main__map > .map__img {
+  width: 100%;
+}
+
