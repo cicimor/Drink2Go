@@ -3,15 +3,14 @@
   line-height: 16px;
   font-weight: 700;
   font-size: 12px;
-  color: #7859CF;
+  color: #7859cf;
   text-transform: uppercase;
   margin: 50px 0 0;
   text-align: center;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 100px 0 0;
   }
-
 }
 
 .features__title {
@@ -22,14 +21,13 @@
   margin: 4px 0 0;
   text-align: center;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 723px;
     line-height: 64px;
     font-size: 42px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 1360px;
-
   }
 }

@@ -8,14 +8,15 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: #F3EBE1;
+  background-color: #f3ebe1;
   justify-content: center;
+  position: relative;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     min-height: 640px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     min-height: 714px;
   }
 }
@@ -26,16 +27,15 @@
   padding: 0 0 60px;
   align-items: center;
 
-  @media (min-width:$tablet-width) {
-    margin: 188px 0 0 0;
-    padding: 0 0 100px;
+  @media (min-width: $tablet-width) {
+    margin: 188px 0 0;
+    padding: 0 0 55px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 0 0 120px;
+    padding: 0 0 70px;
   }
-
 }
 
 .main__catalog {
@@ -43,16 +43,16 @@
   flex-direction: column;
   min-height: 902px;
   align-items: center;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   padding: 0 0 44px;
-  @media (min-width:$tablet-width) {
+
+  @media (min-width: $tablet-width) {
     padding: 0 0 90px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0 0 120px;
   }
-
 }
 
 .main__map {
@@ -60,17 +60,19 @@
   display: flex;
   justify-content: center;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     height: 480px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     height: 540px;
   }
-
 }
 
 .main__map > .map__img {
   width: 100%;
 }
 
+.main__map > .map__img img {
+  width: 100%;
+}
